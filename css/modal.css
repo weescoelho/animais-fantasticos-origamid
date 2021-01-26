@@ -1,0 +1,98 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.active{
+  display: flex;
+}
+
+.modal {
+  background: #fbfdff;
+  padding: 40px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 2px;
+  position: relative;
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translate3d(0,-30px,0)
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0)
+  }
+}
+
+.active .modal{
+  animation:modal .3s forwards;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-family: arial,sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size:14px;
+}
+
+.modal input {
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.01),
+    0 12.5px 10px rgba(0, 0, 0, 0.015), 0 30.1px 24.1px rgba(0, 0, 0, 0.02),
+    0 100px 80px rgba(0, 0, 0, 0.03);
+  height: 30px;
+  width: 300px;
+  border-radius:5px;
+}
+
+.modal input:focus{
+  outline: none;
+}
+
+.modal form button{
+  border:none;
+  padding: 10px 20px;
+  background:#9992ff;
+  color:#fff;
+  border-radius:5px;
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background:tomato;
+  color:#fff;
+  font-weight: bold;
+  border: 5px solid #fff;
+  text-align: center;
+  cursor:pointer;
+  font-family: arial,sans-serif;
+}
+
+.close:focus {
+  outline: none;
+}
