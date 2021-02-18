@@ -1,0 +1,36 @@
+{
+  "name": "animais-fantasticos-origamid",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weescoelho/animais-fantasticos-origamid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weescoelho/animais-fantasticos-origamid/issues"
+  },
+  "homepage": "https://github.com/weescoelho/animais-fantasticos-origamid#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier-eslint": "^12.0.0",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.6.1"
+  },
+  "description": ""
+}
