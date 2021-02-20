@@ -215,15 +215,15 @@ ul{
   display: none;
 }
 
-[data-tab="content"] section.ativo{
+[data-tab="content"] section.active{
   display: block !important;
 }
 
-[data-tab="content"] section.ativo.show-right{
+[data-tab="content"] section.active.show-right{
   animation: show-right .5s forwards;
 }
 
-[data-tab="content"] section.ativo.show-down{
+[data-tab="content"] section.active.show-down{
   animation: show-down .5s forwards;
 }
 
