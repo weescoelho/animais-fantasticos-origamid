@@ -253,16 +253,20 @@ ul{
   display:none;
 }
 
+[data-anime="accordion"] dt{
+  cursor:pointer;
+}
+
 [data-anime="accordion"] dt::after{
   content:'⮧';
   margin-left:10px;
 }
 
-[data-anime="accordion"] dt.ativo::after{
+[data-anime="accordion"] dt.active::after{
   content:'⮥';
 }
 
-[data-anime="accordion"] dd.ativo{
+[data-anime="accordion"] dd.active{
   display: block;
   animation: slideDown .5s forwards
 }
