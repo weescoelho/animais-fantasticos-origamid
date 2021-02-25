@@ -7,7 +7,7 @@ import initDropdownMenu from './modules/dropdown.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import NumberAnim from './modules/numbersAnim.js';
 import initFuncionamento from './modules/funcionamento.js';
-import initAnimationScroll from './modules/scroll-animation.js';
+import AnimaScroll from './modules/scroll-anima.js';
 
 const softScroll = new SoftScroll('[data-soft="smooth"] a[href^="#"]');
 softScroll.init();
@@ -30,7 +30,9 @@ tooltip.init();
 const numberAnim = new NumberAnim('[data-number]', '.numeros', 'ativo');
 numberAnim.init();
 
+const scrollAnima = new AnimaScroll('[data-anime="scroll"]');
+scrollAnima.init();
+
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initAnimationScroll();
