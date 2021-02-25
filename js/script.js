@@ -5,7 +5,7 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown.js';
 import initMenuMobile from './modules/menu-mobile.js';
-import initNumberAnim from './modules/numbersAnim.js';
+import NumberAnim from './modules/numbersAnim.js';
 import initFuncionamento from './modules/funcionamento.js';
 import initAnimationScroll from './modules/scroll-animation.js';
 
@@ -27,8 +27,10 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
+const numberAnim = new NumberAnim('[data-number]', '.numeros', 'ativo');
+numberAnim.init();
+
 initDropdownMenu();
 initMenuMobile();
-initNumberAnim();
 initFuncionamento();
 initAnimationScroll();
