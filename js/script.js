@@ -4,7 +4,7 @@ import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown.js';
-import initMenuMobile from './modules/menu-mobile.js';
+import MenuMobile from './modules/menu-mobile.js';
 import NumberAnim from './modules/numbersAnim.js';
 import initFuncionamento from './modules/funcionamento.js';
 import AnimaScroll from './modules/scroll-anima.js';
@@ -36,5 +36,8 @@ scrollAnima.init();
 const dropdown = new DropdownMenu('[data-dropdown]');
 dropdown.init();
 
-initMenuMobile();
+const menuMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]');
+menuMobile.init();
+
+
 initFuncionamento();
