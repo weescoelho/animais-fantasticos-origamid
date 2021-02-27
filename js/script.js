@@ -6,7 +6,7 @@ import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown.js';
 import MenuMobile from './modules/menu-mobile.js';
 import NumberAnim from './modules/numbersAnim.js';
-import initFuncionamento from './modules/funcionamento.js';
+import Funcionamento from './modules/funcionamento.js';
 import AnimaScroll from './modules/scroll-anima.js';
 
 const softScroll = new SoftScroll('[data-soft="smooth"] a[href^="#"]');
@@ -36,8 +36,8 @@ scrollAnima.init();
 const dropdown = new DropdownMenu('[data-dropdown]');
 dropdown.init();
 
-const menuMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]');
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
+const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 
-initFuncionamento();
