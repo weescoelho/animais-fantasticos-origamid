@@ -3,7 +3,7 @@ import Accordion from './modules/Accordion.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
-import initDropdownMenu from './modules/dropdown.js';
+import DropdownMenu from './modules/dropdown.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import NumberAnim from './modules/numbersAnim.js';
 import initFuncionamento from './modules/funcionamento.js';
@@ -33,6 +33,8 @@ numberAnim.init();
 const scrollAnima = new AnimaScroll('[data-anime="scroll"]');
 scrollAnima.init();
 
-initDropdownMenu();
+const dropdown = new DropdownMenu('[data-dropdown]');
+dropdown.init();
+
 initMenuMobile();
 initFuncionamento();
