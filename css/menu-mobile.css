@@ -3,7 +3,7 @@
 }
 
 @media(max-width:700px){
-  .js [data-menu="button"]{
+  [data-menu="button"]{
     display: flex;
     align-items:center;
     background:#222;
@@ -19,10 +19,10 @@
     position: relative;
     z-index: 201;
   }
-  .js [data-menu="button"].active::before{
+  [data-menu="button"].active::before{
     transform: rotate(90deg);
   }
-  .js [data-menu="button"]::before{
+  [data-menu="button"]::before{
     content:'';
     display: inline-block;
     height: 2px;
@@ -32,7 +32,7 @@
     margin-right: 4px;
     transition: transform .3s
   }
-  .js #menu{
+  #menu{
     display: none;
     position: absolute;
     background:#fb5;
@@ -42,11 +42,11 @@
     padding: 60px 0 20px 0;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0,.2)
   }
-  .js #menu.active{
+  #menu.active{
     display: block;
     animation:show-right .3s forwards;
   }
-  .js .dropdown-menu{
+  .dropdown-menu{
     position:static;
     border:none;
   }
