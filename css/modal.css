@@ -24,6 +24,9 @@
     0 100px 80px rgba(0, 0, 0, 0.07);
   border-radius: 2px;
   position: relative;
+  width:80vw;
+  max-width: 600px;
+  box-sizing: border-box;
 }
 
 @keyframes modal{
