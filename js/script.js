@@ -8,6 +8,7 @@ import MenuMobile from './modules/menu-mobile.js';
 import NumberAnim from './modules/numbersAnim.js';
 import Funcionamento from './modules/funcionamento.js';
 import AnimaScroll from './modules/scroll-anima.js';
+import { SlideNav } from './modules/slide.js';
 
 const softScroll = new SoftScroll('[data-soft="smooth"] a[href^="#"]');
 softScroll.init();
@@ -41,3 +42,7 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
+
+const slide = new SlideNav('.slide', '.slide-wrapper', 1.6, 2);
+slide.init();
+slide.addControl('.custom-controls');
